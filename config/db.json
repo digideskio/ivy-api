@@ -1,0 +1,12 @@
+{
+    "redis": {
+        "db_host": "localhost",
+        "db_name": "test",
+        "db_port": 6379,
+        "enabled": true
+    },
+    "tables": {
+        "user_table": "users",
+        "engine_table": "reelgood"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "debug": false,
+    "file": "test.flask.log",
+    "level": 10,
+    "size": 100000
+}
