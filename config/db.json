@@ -7,6 +7,6 @@
     },
     "tables": {
         "user_table": "users",
-        "engine_table": "reelgood"
+        "engine_table": "engine"
     }
 }
