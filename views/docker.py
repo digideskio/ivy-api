@@ -43,7 +43,7 @@ def create():
 
 #proxys docker rm & rmi
 @app.route('/remove', methods=['POST'])
-def create():
+def remove():
     raw = request.get_data()
     req_parse = 'form'
 
