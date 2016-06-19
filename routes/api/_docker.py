@@ -40,4 +40,4 @@ def container(container_id=None):
         #Remove container logic
         print 'REMOVE REQUEST'
 
-    #return info for container ID, logs etc
+    print 'GET REQUEST'
