@@ -10,7 +10,7 @@ class Config(object):
         importer = FileManager()
 
         self.raw = {}
-        for item in ['db', 'logging', 'server']:
+        for item in ['db', 'logging', 'server', 'api']:
             data = importer.loadFile('./{}.json'.format(item), is_json=True)
             self.raw[item] = data
             if depth == 2: data = Bunch(data, 'one')

@@ -16,9 +16,9 @@ from docker import Client
 
 app = Blueprint('docker_bp', __name__)
 
-deep_config = Config(2)
-config_dict = deep_config.raw
-cli = Client(base_url='tcp://192.168.46.130:2375')
+config = Config(depth=3)
+config_dict = config.raw
+cli = Client(base_url=config.api['docker']['socketURL'])
 
 
 #proxys docker ps
@@ -31,12 +31,13 @@ def containers():
 @app.route('/container/<string:container_id>', methods=['GET', 'REMOVE', 'PUT'])
 def container(container_id=None):
     if request.method == 'POST':
+        print 'POST REQUEST'
         #Create container logic
-
     elif request.method == 'PUT':
+        print 'PUT REQUEST'
         #Update container logic
-
     elif request.method == 'REMOVE':
         #Remove container logic
+        print 'REMOVE REQUEST'
 
     #return info for container ID, logs etc
