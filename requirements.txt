@@ -3,3 +3,4 @@ ujson
 huey
 flask
 redis
+docker-py

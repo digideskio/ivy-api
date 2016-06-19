@@ -20,7 +20,6 @@ except:
 # Code like mad
 
 from modules import database
-
 from modules.common import Bunch
 from modules.config import FileManager, Config
 
@@ -43,7 +42,7 @@ app.logger.addHandler(logHandler) # Add the logger to the Flask instance so we c
 ###
 # Setup and Teardown
 
-from views import docker
+from routes.api import _docker as docker
 
 ####
 ## API Endpoints
